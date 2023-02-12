@@ -40,8 +40,8 @@ function copyText() {
     const text2 = document .querySelector("#author").innerText;
     const k2buttonEl = document.getElementById("k2button");
     navigator.clipboard.writeText(text + text2);
-    k2buttonEl.innerText = "Copied"
-    k2buttonEl.disabled = true;
+    alert("Text copied to clipboard")
+    
   }
 
 
