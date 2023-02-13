@@ -22,7 +22,8 @@ async function getQuote(){
         
     } catch (error) {
         console.log(error);
-        quoteEl.innerText = "Whoops! An error has occured!";
+        quoteEl.innerText = "Whoops! An error has occured!Try again later";
+        authorEl.innerText="Error!"
         btnEl.innerText = "Get A Quote";
         btnEl.disabled = false;
     }
