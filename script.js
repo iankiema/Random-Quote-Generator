@@ -21,7 +21,6 @@ async function getQuote(){
         authorEl.innerText = "Updating...";
         const response = await fetch(apiURL,options);
         const data = await response.json();
-        console.log(data);
         const quoteContent = data.content;
         const quoteAuthor = data.originator.name;
         quoteEl.innerHTML = quoteContent;
